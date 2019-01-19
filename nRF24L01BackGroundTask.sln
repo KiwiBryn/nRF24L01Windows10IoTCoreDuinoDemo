@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nRF24L01BackGroundTask", "nRF24L01BackGroundTask\nRF24L01BackGroundTask.csproj", "{E5EEE4F3-FF53-495F-8978-7F651C809C22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Radios.RF24", "Radios.RF24\Radios.RF24.csproj", "{906804EC-B76A-4BAE-B587-1B455071F7D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DuinoRF24Client", "DuinoRF24Client", "{DCB49149-44A3-4773-828A-2BD06F3ABEE4}"
+	ProjectSection(SolutionItems) = preProject
+		DuinoRF24Client.ino = DuinoRF24Client.ino
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Debug|ARM.ActiveCfg = Debug|ARM
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Debug|ARM.Build.0 = Debug|ARM
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Debug|ARM.Deploy.0 = Debug|ARM
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Debug|x64.ActiveCfg = Debug|x64
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Debug|x64.Build.0 = Debug|x64
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Debug|x64.Deploy.0 = Debug|x64
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Debug|x86.ActiveCfg = Debug|x86
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Debug|x86.Build.0 = Debug|x86
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Debug|x86.Deploy.0 = Debug|x86
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Release|Any CPU.ActiveCfg = Release|x86
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Release|ARM.ActiveCfg = Release|ARM
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Release|ARM.Build.0 = Release|ARM
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Release|ARM.Deploy.0 = Release|ARM
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Release|x64.ActiveCfg = Release|x64
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Release|x64.Build.0 = Release|x64
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Release|x64.Deploy.0 = Release|x64
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Release|x86.ActiveCfg = Release|x86
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Release|x86.Build.0 = Release|x86
+		{E5EEE4F3-FF53-495F-8978-7F651C809C22}.Release|x86.Deploy.0 = Release|x86
+		{906804EC-B76A-4BAE-B587-1B455071F7D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{906804EC-B76A-4BAE-B587-1B455071F7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{906804EC-B76A-4BAE-B587-1B455071F7D9}.Debug|ARM.ActiveCfg = Debug|ARM
+		{906804EC-B76A-4BAE-B587-1B455071F7D9}.Debug|ARM.Build.0 = Debug|ARM
+		{906804EC-B76A-4BAE-B587-1B455071F7D9}.Debug|x64.ActiveCfg = Debug|x64
+		{906804EC-B76A-4BAE-B587-1B455071F7D9}.Debug|x64.Build.0 = Debug|x64
+		{906804EC-B76A-4BAE-B587-1B455071F7D9}.Debug|x86.ActiveCfg = Debug|x86
+		{906804EC-B76A-4BAE-B587-1B455071F7D9}.Debug|x86.Build.0 = Debug|x86
+		{906804EC-B76A-4BAE-B587-1B455071F7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{906804EC-B76A-4BAE-B587-1B455071F7D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{906804EC-B76A-4BAE-B587-1B455071F7D9}.Release|ARM.ActiveCfg = Release|ARM
+		{906804EC-B76A-4BAE-B587-1B455071F7D9}.Release|ARM.Build.0 = Release|ARM
+		{906804EC-B76A-4BAE-B587-1B455071F7D9}.Release|x64.ActiveCfg = Release|x64
+		{906804EC-B76A-4BAE-B587-1B455071F7D9}.Release|x64.Build.0 = Release|x64
+		{906804EC-B76A-4BAE-B587-1B455071F7D9}.Release|x86.ActiveCfg = Release|x86
+		{906804EC-B76A-4BAE-B587-1B455071F7D9}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BE66D3B-310D-4295-AD5F-2D308A417899}
+	EndGlobalSection
+EndGlobal

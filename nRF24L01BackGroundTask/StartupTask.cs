@@ -21,9 +21,22 @@ namespace devmobile.IoTCore.nRF24L01BackGroundTask
 {
 	public sealed class StartupTask : IBackgroundTask
 	{
+		// nRF24 Hardware interface configuration
+#if CEECH_NRF24L01P_SHIELD
 		private const byte ChipEnablePin = 25;
-		private const byte ChipSelectPin = 0;
-		private const byte nRF24InterruptPin = 17;
+      private const byte ChipSelectPin = 0;
+      private const byte InterruptPin = 17;
+#endif
+#if BOROS_RF2_SHIELD_RADIO_0
+		private const byte ChipEnablePin = 24;
+      private const byte ChipSelectPin = 0;
+      private const byte InterruptPin = 27;
+#endif
+#if BOROS_RF2_SHIELD_RADIO_1
+		private const byte ChipEnablePin = 25;
+      private const byte ChipSelectPin = 1;
+      private const byte InterruptPin = 22;
+#endif
 		private const string BaseStationAddress = "Node1";
 		private const byte nRF24Channel = 20;
 		private RF24 Radio = new RF24();
@@ -37,7 +50,7 @@ namespace devmobile.IoTCore.nRF24L01BackGroundTask
 			Radio.OnTransmitFailed += Radio_OnTransmitFailed;
 			Radio.OnTransmitSuccess += Radio_OnTransmitSuccess;
 
-			Radio.Initialize(ChipEnablePin, ChipSelectPin, nRF24InterruptPin);
+			Radio.Initialize(ChipEnablePin, ChipSelectPin, InterruptPin);
 			Radio.Address = Encoding.UTF8.GetBytes(BaseStationAddress);
 			Radio.Channel = nRF24Channel;
 			Radio.PowerLevel = PowerLevel.High;

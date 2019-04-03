@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Radios.RF24", "Radios.RF24\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DuinoRF24Client", "DuinoRF24Client", "{DCB49149-44A3-4773-828A-2BD06F3ABEE4}"
 	ProjectSection(SolutionItems) = preProject
-		DuinoRF24Client.ino = DuinoRF24Client.ino
+		DuinoRF24Client\DuinoRF24Client.ino = DuinoRF24Client\DuinoRF24Client.ino
 	EndProjectSection
 EndProject
 Global

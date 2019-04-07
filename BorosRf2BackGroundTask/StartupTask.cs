@@ -26,6 +26,7 @@ namespace devmobile.IoTCore.BorosRf2BackGroundTask
 		private const byte ChipSelectPin0 = 0;
 		private const byte InterruptPin0 = 27;
 		private const string BaseStationAddress0 = "Node0";
+		private const string DeviceAddress0 = "Node1";
 		private const byte nRF24Channel0 = 20;
 		private RF24 Radio0 = new RF24();
 		private ThreadPoolTimer timer0;
@@ -34,6 +35,7 @@ namespace devmobile.IoTCore.BorosRf2BackGroundTask
 		private const byte ChipSelectPin1 = 1;
 		private const byte InterruptPin1 = 22;
 		private const string BaseStationAddress1 = "Node1";
+		private const string DeviceAddress1 = "Node0";
 		private const byte nRF24Channel1 = 20;
 		private RF24 Radio1 = new RF24();
 		private ThreadPoolTimer timer1;
@@ -109,16 +111,12 @@ namespace devmobile.IoTCore.BorosRf2BackGroundTask
 
 		void SendMessageTimer0(ThreadPoolTimer timer)
 		{
-			const string DeviceAddress = "Node1";
-
-			Radio0.SendTo(Encoding.UTF8.GetBytes(DeviceAddress), Encoding.UTF8.GetBytes("hello from 0 " + DateTime.Now.Second));
+			Radio0.SendTo(Encoding.UTF8.GetBytes(DeviceAddress0), Encoding.UTF8.GetBytes("hello from 0 " + DateTime.Now.Second));
 		}
 
 		void SendMessageTimer1(ThreadPoolTimer timer)
 		{
-			const string DeviceAddress = "Node0";
-
-			Radio1.SendTo(Encoding.UTF8.GetBytes(DeviceAddress), Encoding.UTF8.GetBytes("hello from 1" + DateTime.Now.Second));
+			Radio1.SendTo(Encoding.UTF8.GetBytes(DeviceAddress1), Encoding.UTF8.GetBytes("hello from 1" + DateTime.Now.Second));
 		}
 
 		private void Radio0_OnDataReceived(byte[] data)
